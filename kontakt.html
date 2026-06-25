@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt - Sitelevo</title>
+<meta name="description" content="Kontakt Sitelevo - book et uforpligtende møde om din nye hjemmeside. Skriv til hello@sitelevo.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="brand">Site<span>levo</span></a>
+    <nav class="nav__links">
+      <a href="index.html">Forside</a>
+      <a href="saadan-virker-det.html">Sådan virker det</a>
+      <a href="priser.html">Priser</a>
+      <a href="eksempler.html">Eksempler</a>
+      <a href="om-os.html">Om os</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+      <a href="kontakt.html" class="btn btn--gold nav__cta">Book et møde</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap reveal">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Lad os tage en snak</h1>
+    <p class="lead">Book et uforpligtende møde, eller skriv et par ord om din virksomhed - så vender vi tilbage hurtigst muligt.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <h2 style="margin-bottom:18px">Skriv til os</h2>
+      <form onsubmit="event.preventDefault(); alert('Tak! Dette er et preview - formularen kobles til e-mail/Jotform, før siden går live.');">
+        <div class="field"><label for="navn">Navn</label><input id="navn" type="text" placeholder="Dit navn" required></div>
+        <div class="field"><label for="virk">Virksomhed</label><input id="virk" type="text" placeholder="Virksomhedens navn"></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="dig@eksempel.dk" required></div>
+        <div class="field"><label for="besked">Besked</label><textarea id="besked" rows="5" placeholder="Fortæl kort om din virksomhed og hvad du ønsker…" required></textarea></div>
+        <button type="submit" class="btn btn--gold">Send besked</button>
+        <p class="muted" style="font-size:.82rem;margin-top:12px">Preview: formularen kobles til e-mail/Jotform, før siden går live.</p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="info-row"><span class="ico">✉️</span><div><strong>E-mail</strong><br><a href="mailto:hello@sitelevo.com">hello@sitelevo.com</a></div></div>
+      <div class="info-row"><span class="ico">🌐</span><div><strong>Web</strong><br>sitelevo.com</div></div>
+      <div class="info-row"><span class="ico">📍</span><div><strong>Sted</strong><br>København, Danmark</div></div>
+      <div class="info-row"><span class="ico">🏢</span><div><strong>Virksomhed</strong><br>Sitelevo ApS · CVR 43695592</div></div>
+      <p class="muted" style="margin-top:22px">Vil du hellere mødes? Skriv “møde” i beskeden, så finder vi en tid - fysisk eller online.</p>
+      <a href="mailto:hello@sitelevo.com?subject=Book%20et%20m%C3%B8de%20om%20en%20hjemmeside" class="btn btn--navy" style="margin-top:8px">Book et møde</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand">Site<span>levo</span></a>
+        <p style="margin-top:14px;max-width:36ch">Professionelle hjemmesider til lokale danske virksomheder - bygget, hostet og passet for dig.</p>
+      </div>
+      <div>
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="saadan-virker-det.html">Sådan virker det</a></li>
+          <li><a href="priser.html">Priser</a></li>
+          <li><a href="eksempler.html">Eksempler</a></li>
+          <li><a href="om-os.html">Om os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:hello@sitelevo.com">hello@sitelevo.com</a></li>
+          <li>sitelevo.com</li>
+          <li>København</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Sitelevo ApS · CVR 43695592</span>
+      <span>Professionelle hjemmesider på abonnement</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="priser.html" class="btn btn--ghost">Priser</a>
+  <a href="mailto:hello@sitelevo.com" class="btn btn--gold">Skriv til os</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

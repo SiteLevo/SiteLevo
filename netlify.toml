@@ -1,0 +1,4 @@
+# Netlify-konfiguration - statisk HTML/CSS-site (ingen build nødvendig)
+# Filerne ligger i roden af repoet, så Netlify udgiver dem direkte.
+[build]
+  publish = "."
