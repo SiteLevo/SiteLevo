@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Cookiebot samtykke (foerste script i head) -->
+<!--#page kontakt-->
+<!-- Cookiebot samtykke (første script i head) -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c3603add-a261-49b1-8fa5-3a3009985492" data-blockingmode="auto" type="text/javascript"></script>
 <!-- Google Consent Mode v2 (afvis som standard) -->
 <script>
@@ -14,79 +13,150 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQQZHEHY65"></script>
 <script>gtag('js',new Date());gtag('config','G-EQQZHEHY65');</script>
-<title>Kontakt - Sitelevo</title>
-<meta name="description" content="Kontakt Sitelevo - book et uforpligtende møde om din nye hjemmeside. Skriv til info@sitelevo.com.">
-<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 
-<link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:600,700,800|dm-sans:300,400,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/questrial-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+
+<title>SiteLevo | Kontakt</title>
+<meta name="description" content="Skal vi tage en snak? Skriv til SiteLevo, eller book et kort telefonmøde. Du behøver ikke vide præcis, hvad du har brug for.">
+<link rel="canonical" href="https://sitelevo.com/kontakt.html">
+<meta property="og:title" content="SiteLevo | Kontakt">
+<meta property="og:description" content="Fortæl os lidt om din virksomhed, så tager vi den derfra.">
+<meta property="og:url" content="https://sitelevo.com/kontakt.html">
+<meta property="og:type" content="website">
 </head>
-<body>
-
-<header class="nav">
-  <div class="wrap nav__inner">
-    <a href="index.html" class="brand">Site<span>levo</span></a>
-    <nav class="nav__links">
-      <a href="index.html">Forside</a>
-      <a href="saadan-virker-det.html">Sådan virker det</a>
-      <a href="priser.html">Priser</a>
-      <a href="eksempler.html">Eksempler</a>
-      <a href="om-os.html">Om os</a>
-      <a href="kontakt.html" class="active">Kontakt</a>
-      <a href="kontakt.html" class="btn btn--gold nav__cta">Book et møde</a>
+<body class="p-kontakt fx">
+<header class="nav sec" style="--sh:110">
+  <div class="cv">
+    <a href="index.html" class="logo" aria-label="SiteLevo forside">
+      <svg class="logo__mark a" viewBox="4 5 39 37" aria-hidden="true" style="--x:109;--y:39;--w:40;--h:37"><path d="M4.4 16.9 28.8 5.6 42.5 13.1 17.5 24.4Z"/><path d="M4.4 33.8 28.8 22.3 42.5 30 17.5 41.3Z"/></svg>
+      <span class="logo__word a t f-sb" style="--x:160.81;--y:32.84;--fs:36.15;--lh:36">sitelevo</span>
+    </a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Hovedmenu">
+      <a class="a t f-q" href="hvad-du-faar.html" data-page="hvad" style="--x:837.38;--y:37.66;--fs:21.58;--lh:27">Hvad du får</a>
+      <a class="a t f-q" href="saadan-fungerer-det.html" data-page="saadan" style="--x:1011.69;--y:37.66;--fs:21.58;--lh:27">Sådan fungerer det</a>
+      <a class="a t f-q" href="cases.html" data-page="cases" style="--x:1257.44;--y:39.18;--fs:21.58;--lh:27">Cases</a>
+      <a class="a t f-q" href="priser.html" data-page="priser" style="--x:1373.21;--y:38.45;--fs:21.58;--lh:27">Priser</a>
+      <a class="a t f-q" href="kontakt.html" data-page="kontakt" aria-current="page" style="--x:1474.35;--y:38.86;--fs:21.58;--lh:27">Kontakt</a>
+      <a class="btn btn--nav a" href="kontakt.html" style="--x:1611;--y:25;--w:219;--h:58"><span class="a t f-xb" style="--x:53.08;--y:15.85;--fs:18.09;--lh:23.4">Kom i gang</span></a>
     </nav>
-    <button class="nav__toggle" aria-label="Menu">☰</button>
   </div>
 </header>
 
-<section class="page-hero">
-  <div class="wrap reveal">
-    <p class="eyebrow">Kontakt</p>
-    <h1>Lad os tage en snak</h1>
-    <p class="lead">Book et uforpligtende møde, eller skriv et par ord om din virksomhed - så vender vi tilbage hurtigst muligt.</p>
+<main>
+
+<!-- 1 HERO (PSD "Kontakt os" y110-630) -->
+<section class="sec hero hero--short" style="--sh:520">
+  <div class="cv">
+    <h1 class="a t f-b" style="--x:157.47;--y:138.02;--fs:64.8;--lh:66.6;--w:900">Skal vi tage en snak?</h1>
+    <p class="lead a t f-q" style="--x:162.93;--y:252.35;--fs:24.53;--lh:32.4;--w:760">Fortæl os lidt om din virksomhed, så tager vi den derfra.<br class="d"> Du behøver ikke vide præcis, hvad du har brug for.<br class="d"> Vi hjælper dig med at finde det rigtige sted at starte.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap contact-grid">
-
-    <div class="reveal">
-      <h2 style="margin-bottom:18px">Skriv til os</h2>
-      <form onsubmit="event.preventDefault(); alert('Tak! Dette er et preview - formularen kobles til e-mail/Jotform, før siden går live.');">
-        <div class="field"><label for="navn">Navn</label><input id="navn" type="text" placeholder="Dit navn" required></div>
-        <div class="field"><label for="virk">Virksomhed</label><input id="virk" type="text" placeholder="Virksomhedens navn"></div>
-        <div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="dig@eksempel.dk" required></div>
-        <div class="field"><label for="besked">Besked</label><textarea id="besked" rows="5" placeholder="Fortæl kort om din virksomhed og hvad du ønsker…" required></textarea></div>
-        <button type="submit" class="btn btn--gold">Send besked</button>
+<!-- 2 FORMULAR OG BOOKING (PSD y630-1950). Formularen sendes via Netlify Forms. Kalenderen er et link til den rigtige Google-booking. -->
+<section class="sec kontakt" style="--sh:1320">
+  <div class="cv">
+    <div class="kpanel kpanel--form a" style="--x:135;--y:137;--w:763;--h:1105">
+      <p class="eyebrow a t f-sb" style="--x:55.29;--y:59.45;--fs:16.2;--lh:19.8">SKRIV TIL OS</p>
+      <h2 class="a t f-b" style="--x:54.67;--y:97.21;--fs:32.4;--lh:39.6">Fortæl os om din virksomhed</h2>
+      <form class="kform" name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="kontakt">
+        <input type="hidden" name="pakke" value="">
+        <p class="vh"><label>Udfyld ikke dette felt: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="kform__grid">
+          <label class="kf"><span class="vh">Navn</span><input class="kin a" type="text" name="navn" placeholder="Navn*" autocomplete="name" required style="--x:55;--y:175;--w:306;--h:70"></label>
+          <label class="kf"><span class="vh">Virksomhed</span><input class="kin a" type="text" name="virksomhed" placeholder="Virksomhed*" autocomplete="organization" required style="--x:399;--y:175;--w:305;--h:70"></label>
+          <label class="kf"><span class="vh">E-mail</span><input class="kin a" type="email" name="email" placeholder="E-mail*" autocomplete="email" required style="--x:55;--y:274;--w:306;--h:70"></label>
+          <label class="kf"><span class="vh">Telefonnummer</span><input class="kin a" type="tel" name="telefon" placeholder="Telefonnummer (valgfrit)" autocomplete="tel" style="--x:399;--y:274;--w:305;--h:70"></label>
+        </div>
+        <fieldset class="kform__need">
+          <legend class="a t f-sb" style="--x:57.21;--y:398.3;--fs:23.22;--lh:27">Hvad har du brug for?</legend>
+          <label class="kr"><input class="a" type="radio" name="behov" value="Ny hjemmeside til en ny virksomhed" required style="--x:55;--y:459;--w:30;--h:30"><span class="a t f-q" style="--x:101.01;--y:459.19;--fs:24.53;--lh:27">Ny hjemmeside til en ny virksomhed</span></label>
+          <label class="kr"><input class="a" type="radio" name="behov" value="Ny hjemmeside til eksisterende virksomhed" style="--x:55;--y:505;--w:30;--h:30"><span class="a t f-q" style="--x:101.01;--y:505.19;--fs:24.53;--lh:27">Ny hjemmeside til eksisterende virksomhed</span></label>
+          <label class="kr"><input class="a" type="radio" name="behov" value="Jeg vil gerne høre mere" style="--x:55;--y:550;--w:30;--h:30"><span class="a t f-q" style="--x:101.63;--y:551.19;--fs:24.53;--lh:27">Jeg vil gerne høre mere</span></label>
+        </fieldset>
+        <label class="kf kf--ta"><span class="kform__lbl a t f-sb" style="--x:55.25;--y:639.12;--fs:22.68;--lh:27">Fortæl lidt om din virksomhed</span><textarea class="kin kta a" name="besked" rows="5" placeholder="Fortæl kort om din virksomhed, og hvad du har brug for hjælp til." style="--x:55;--y:700;--w:647;--h:205"></textarea></label>
+        <button class="btn btn--form a" type="submit" style="--x:54;--y:937;--w:648;--h:87"><span class="a t f-xb" style="--x:249.42;--y:29;--fs:22.5;--lh:27">Send til os</span><svg class="arr a" viewBox="0 0 29 11" aria-hidden="true" style="--x:378.84;--y:37.1;--w:29;--h:11"><path d="M0 5.5h21"/><path class="h" d="M20 .8 29 5.5 20 10.2z"/></svg></button>
+        <p class="kform__note wrap a t f-q" style="--x:56.32;--y:1038.38;--fs:12.75;--lh:16.2;--w:600">Når du sender formularen, accepterer du, at SiteLevo behandler dine oplysninger for at kunne kontakte dig. Læs vores <a href="privatlivspolitik.html">privatlivspolitik</a>.</p>
       </form>
+      <div class="kform__done a" role="status" hidden style="--x:55;--y:175;--w:648;--h:850">
+        <h3>Tak for din besked</h3>
+        <p>Vi har modtaget den og vender tilbage hurtigst muligt, typisk inden for 1 hverdag.</p>
+      </div>
+      <p class="kform__err a" role="alert" hidden style="--x:55;--y:1071;--w:648;--h:30">Beskeden kunne ikke sendes. Prøv igen, eller skriv til info@sitelevo.com.</p>
     </div>
 
-    <div class="reveal">
-      <div class="info-row"><span class="ico">✉️</span><div><strong>E-mail</strong><br><a href="mailto:info@sitelevo.com">info@sitelevo.com</a></div></div>
-      <div class="info-row"><span class="ico">📞</span><div><strong>Telefon</strong><br><a href="tel:+4533320719">33 32 07 19</a></div></div>
-      <div class="info-row"><span class="ico">🌐</span><div><strong>Web</strong><br>sitelevo.com</div></div>
-      <div class="info-row"><span class="ico">📍</span><div><strong>Adresse</strong><br>Store Kongensgade 112, 1264 København K</div></div>
-      <div class="info-row"><span class="ico">🏢</span><div><strong>Virksomhed</strong><br>Sitelevo ApS · CVR 43695592</div></div>
-      <p class="muted" style="margin-top:22px">Vil du hellere mødes? Skriv “møde” i beskeden, så finder vi en tid - fysisk eller online.</p>
-      <a href="mailto:info@sitelevo.com?subject=Book%20et%20m%C3%B8de%20om%20en%20hjemmeside" class="btn btn--navy" style="margin-top:8px">Book et møde</a>
+    <div class="kpanel kpanel--book a" style="--x:1009;--y:137;--w:763;--h:1105">
+      <p class="eyebrow a t f-sb" style="--x:67.82;--y:59.45;--fs:16.2;--lh:19.8">TAL MED OS</p>
+      <h2 class="a t f-b" style="--x:67.67;--y:97.21;--fs:32.4;--lh:39.6">Book et telefonmøde</h2>
+      <p class="kpanel__txt a t f-q" style="--x:67.88;--y:192.68;--fs:24.53;--lh:32.4;--w:640">Er du i tvivl om, hvad du har brug for? Book et kort<br class="d"> telefonmøde, så ringer vi dig op. Vi hører om din<br class="d"> virksomhed, svarer på dine spørgsmål og hjælper<br class="d"> dig med at finde det rigtige sted at starte.</p>
+      <div class="kcal a" data-api="" data-book="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" style="--x:71;--y:381;--w:638;--h:477">
+        <a class="kcal__cover" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" target="_blank" rel="noopener" aria-label="Åbn kalenderen og book et telefonmøde på 15 minutter"></a>
+        <div class="kcal__pick">
+          <span class="kcal__head"><span class="kcal__ttl a t f-b" style="--x:29.81;--y:28.87;--fs:17.1;--lh:21.6">Vælg et tidspunkt</span><svg class="kcal__clk a" viewBox="0 0 24 24" aria-hidden="true" style="--x:476;--y:32;--w:24;--h:24"><circle cx="12" cy="12" r="9"/><path d="M12 7.2v5l3.2 1.9"/></svg><span class="kcal__dur a t f-q" style="--x:514.48;--y:31.23;--fs:18.64;--lh:21.6">15 min</span></span>
+          <span class="kcal__wds" aria-hidden="true"><span class="kcal__wd a t f-q tc" style="--x:85;--y:86.25;--fs:14.72;--lh:18;--w:80">Man</span><span class="kcal__wd a t f-q tc" style="--x:175;--y:86.55;--fs:14.72;--lh:18;--w:80">Tir</span><span class="kcal__wd a t f-q tc" style="--x:265;--y:86.37;--fs:14.72;--lh:18;--w:80">Ons</span><span class="kcal__wd a t f-q tc" style="--x:355;--y:86.25;--fs:14.72;--lh:18;--w:80">Tor</span><span class="kcal__wd a t f-q tc" style="--x:445;--y:86.25;--fs:14.72;--lh:18;--w:80">Fre</span></span>
+          <button class="kcal__nav kcal__prev a" type="button" aria-label="Forrige uger" tabindex="-1" style="--x:30;--y:186;--w:20;--h:24"><svg viewBox="0 0 20 24" aria-hidden="true"><path d="M12.5 7 7.5 12l5 5"/></svg></button>
+          <span class="kcal__days" role="group" aria-label="Vælg dag"><button class="kcal__day a" type="button" tabindex="-1" style="--x:95;--y:123;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">9</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:185;--y:123;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">10</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:275;--y:123;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:11.86;--fs:15.3;--lh:18;--w:60">11</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:365;--y:123;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">12</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:455;--y:123;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:11.86;--fs:15.3;--lh:18;--w:60">13</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:95;--y:182;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:11.86;--fs:15.3;--lh:18;--w:60">16</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:185;--y:182;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:11.86;--fs:15.3;--lh:18;--w:60">17</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:275;--y:182;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">18</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:365;--y:182;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">19</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:455;--y:182;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">20</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:95;--y:242;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">23</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:185;--y:242;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">24</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:275;--y:242;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">25</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:365;--y:242;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">26</span></button><button class="kcal__day a" type="button" tabindex="-1" style="--x:455;--y:242;--w:60;--h:44"><span class="a t f-sb tc" style="--x:0;--y:12.04;--fs:15.3;--lh:18;--w:60">27</span></button></span>
+          <button class="kcal__nav kcal__next a" type="button" aria-label="Næste uger" tabindex="-1" style="--x:578;--y:186;--w:20;--h:24"><svg viewBox="0 0 20 24" aria-hidden="true"><path d="M7.5 7l5 5-5 5"/></svg></button>
+          <span class="kcal__hr a" aria-hidden="true" style="--x:30;--y:320;--w:562;--h:1"></span>
+          <button class="kcal__nav kcal__tprev a" type="button" aria-label="Tidligere tider" tabindex="-1" style="--x:30;--y:387;--w:20;--h:24"><svg viewBox="0 0 20 24" aria-hidden="true"><path d="M12.5 7 7.5 12l5 5"/></svg></button>
+          <span class="kcal__times" role="group" aria-label="Vælg tidspunkt"><button class="kcal__time a" type="button" tabindex="-1" style="--x:70;--y:346;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:12.09;--fs:16.68;--lh:18;--w:150">10:00</span></button><button class="kcal__time a" type="button" tabindex="-1" style="--x:236;--y:346;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:12.09;--fs:16.68;--lh:18;--w:150">10:15</span></button><button class="kcal__time a" type="button" tabindex="-1" style="--x:402;--y:346;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:12.09;--fs:16.68;--lh:18;--w:150">10:30</span></button><button class="kcal__time a" type="button" tabindex="-1" style="--x:70;--y:406;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:12.09;--fs:16.68;--lh:18;--w:150">10:45</span></button><button class="kcal__time a" type="button" tabindex="-1" style="--x:236;--y:406;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:12.09;--fs:16.68;--lh:18;--w:150">11:00</span></button><button class="kcal__time a" type="button" tabindex="-1" style="--x:402;--y:406;--w:150;--h:46"><span class="a t f-q tc" style="--x:0;--y:11.95;--fs:16.68;--lh:18;--w:150">11:15</span></button></span>
+          <button class="kcal__nav kcal__tnext a" type="button" aria-label="Senere tider" tabindex="-1" style="--x:578;--y:387;--w:20;--h:24"><svg viewBox="0 0 20 24" aria-hidden="true"><path d="M7.5 7l5 5-5 5"/></svg></button>
+        </div>
+        <form class="kcal__form" hidden>
+          <p class="kcal__chosen wrap a t f-b" style="--x:28.77;--y:28.87;--fs:17.1;--lh:21.6;--w:560">Mandag d. 9. november kl. 10:00</p>
+          <p class="vh"><label>Udfyld ikke dette felt: <input name="hp" tabindex="-1" autocomplete="off"></label></p>
+          <label class="kf"><span class="vh">Navn</span><input class="kin a" type="text" name="navn" placeholder="Navn*" autocomplete="name" required style="--x:30;--y:82;--w:578;--h:56"></label>
+          <label class="kf"><span class="vh">E-mail</span><input class="kin a" type="email" name="email" placeholder="E-mail*" autocomplete="email" required style="--x:30;--y:150;--w:578;--h:56"></label>
+          <label class="kf"><span class="vh">Telefonnummer</span><input class="kin a" type="tel" name="telefon" placeholder="Telefonnummer*" autocomplete="tel" required style="--x:30;--y:218;--w:578;--h:56"></label>
+          <p class="kcal__hint wrap a t f-q" style="--x:29.95;--y:294.85;--fs:15.7;--lh:19.8;--w:578">Vi ringer dig op på dit nummer. Du får en bekræftelse på mail.</p>
+          <button class="kcal__back a" type="button" style="--x:30;--y:350;--w:260;--h:30"><span class="a t f-sb" style="--x:-0.16;--y:1.73;--fs:14.4;--lh:18">Vælg en anden tid</span></button>
+        </form>
+        <div class="kcal__done a" role="status" hidden style="--x:30;--y:32;--w:578;--h:410"><svg class="kcal__ok" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14.5 24.5 6.5 6.5 12.5-13"/></svg><h3>Tak, du er booket</h3><p class="kcal__donetxt"></p></div>
+        <p class="kcal__err a" role="alert" hidden style="--x:30;--y:456;--w:578;--h:20"></p>
+      </div>
+      <a class="btn btn--form kbook a" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" target="_blank" rel="noopener" style="--x:67;--y:937;--w:644;--h:87"><span class="a t f-xb" style="--x:184.39;--y:29;--fs:22.5;--lh:27">Book et telefonmøde</span><svg class="arr a" viewBox="0 0 29 11" aria-hidden="true" style="--x:445.13;--y:37.1;--w:29;--h:11"><path d="M0 5.5h21"/><path class="h" d="M20 .8 29 5.5 20 10.2z"/></svg></a>
+      <p class="kform__note wrap a t f-q" style="--x:69.32;--y:1038.38;--fs:12.75;--lh:16.2;--w:600">Når du booker et møde, bruger vi dine oplysninger til at administrere bookingen og kontakte dig. Læs vores <a href="privatlivspolitik.html">privatlivspolitik</a>.</p>
     </div>
   </div>
 </section>
 
+<!-- 3 KONTAKTOPLYSNINGER (PSD y1950-2667) -->
+<section class="sec reach" style="--sh:717">
+  <div class="cv">
+    <p class="eyebrow a t f-sb" style="--x:140.29;--y:57.45;--fs:16.2;--lh:19.8">SKRIV TIL OS</p>
+    <h2 class="a t f-b" style="--x:139.67;--y:95.21;--fs:32.4;--lh:39.6">Du er altid velkommen til at kontakte os</h2>
+    <ul class="reach__list">
+      <li><svg class="ricon a" viewBox="0 0 30 23" aria-hidden="true" style="--x:141;--y:247;--w:30;--h:23"><rect x="1.2" y="1.2" width="27.6" height="20.6" rx="2.6"/><path d="M2.4 3 15 12.4 27.6 3"/></svg><p class="a t f-q" style="--x:185.48;--y:206.49;--fs:24.53;--lh:32.4">E-mail:<br><a href="mailto:info@sitelevo.com">info@sitelevo.com</a></p></li>
+      <li><svg class="ricon ricon--fill a" viewBox="0 0 24 24" aria-hidden="true" style="--x:141;--y:369;--w:29;--h:28"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><p class="a t f-q" style="--x:186.66;--y:335.68;--fs:24.53;--lh:32.4">Telefon:<br><a href="tel:+4533320719">33 32 07 19</a></p></li>
+      <li><svg class="ricon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:140;--y:506;--w:30;--h:29"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.6 1.6"/><path d="M14 10.5a4.5 4.5 0 0 0-6.4-.4l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6"/></svg><p class="a t f-q" style="--x:185.93;--y:473.49;--fs:24.53;--lh:32.4">Virksomhed:<br>Sitelevo ApS · CVR 43695592</p></li>
+    </ul>
+    <div class="reach__box a" aria-hidden="true" style="--x:1043;--y:59;--w:694;--h:492"></div>
+    <img class="reach__img a" src="assets/img/kontakt-telefon.webp" width="251" height="449" alt="Hånd der holder en mobil med et opkald fra SiteLevo" loading="lazy" style="--x:1267;--y:102;--w:251;--h:449">
+  </div>
+</section>
+</main>
 <footer class="footer">
-  <div class="wrap">
+  <div class="footer__wrap">
     <div class="footer__grid">
       <div>
-        <a href="index.html" class="brand">Site<span>levo</span></a>
-        <p style="margin-top:14px;max-width:36ch">Professionelle hjemmesider til lokale danske virksomheder - bygget, hostet og passet for dig.</p>
+        <a href="index.html" class="footer__brand">Site<span>levo</span></a>
+        <p class="footer__pitch">Professionelle hjemmesider til lokale danske virksomheder, bygget, hostet og passet for dig.</p>
       </div>
       <div>
         <h4>Sider</h4>
         <ul>
           <li><a href="index.html">Forside</a></li>
-          <li><a href="saadan-virker-det.html">Sådan virker det</a></li>
+          <li><a href="hvad-du-faar.html">Hvad du får</a></li>
+          <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+          <li><a href="cases.html">Cases</a></li>
           <li><a href="priser.html">Priser</a></li>
-          <li><a href="eksempler.html">Eksempler</a></li>
           <li><a href="om-os.html">Om os</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -97,11 +167,10 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
           <li><a href="mailto:info@sitelevo.com">info@sitelevo.com</a></li>
           <li>sitelevo.com</li>
           <li>Tlf: <a href="tel:+4533320719">33 32 07 19</a></li>
-          <li>Store Kongensgade 112, 1264 København K</li>
         </ul>
       </div>
     </div>
-    <div class="footer__pay"><span class="pay-label">Betaling:</span> <span class="mp-badge" title="Vi tager imod MobilePay"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5A78FF"/><path d="M13 13h22a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H21l-7 5.5V32h-1a4 4 0 0 1-4-4V17a4 4 0 0 1 4-4z" fill="#fff"/><path d="M24 19.4c-1.7-1.9-4.6-1.1-4.6 1.4 0 1.9 2.3 3.7 4.6 5.5 2.3-1.8 4.6-3.6 4.6-5.5 0-2.5-2.9-3.3-4.6-1.4z" fill="#5A78FF"/></svg>MobilePay</span></div>
+    <div class="footer__pay"><span class="pay-label">Betaling:</span> <span class="mp-badge"><svg width="20" height="16" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="1" y="1" width="22" height="16" rx="3"/><path d="M1 6h22M5 12.5h5"/></svg>Kort via Stripe</span></div>
     <div class="footer__bottom">
       <span>© 2026 Sitelevo ApS · CVR 43695592</span>
       <span><a href="handelsbetingelser.html">Handelsbetingelser</a> · <a href="privatlivspolitik.html">Privatlivspolitik</a> · Professionelle hjemmesider på abonnement</span>
@@ -109,11 +178,6 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
   </div>
 </footer>
 
-<div class="sticky-cta">
-  <a href="priser.html" class="btn btn--ghost">Priser</a>
-  <a href="mailto:info@sitelevo.com" class="btn btn--gold">Skriv til os</a>
-</div>
-
-<script src="script.js"></script>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Cookiebot samtykke (foerste script i head) -->
+<!--#page priser-->
+<!-- Cookiebot samtykke (første script i head) -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c3603add-a261-49b1-8fa5-3a3009985492" data-blockingmode="auto" type="text/javascript"></script>
 <!-- Google Consent Mode v2 (afvis som standard) -->
 <script>
@@ -14,122 +13,187 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQQZHEHY65"></script>
 <script>gtag('js',new Date());gtag('config','G-EQQZHEHY65');</script>
-<title>Priser - Sitelevo</title>
-<meta name="description" content="Sitelevos priser: tre enkle pakker fra 399 kr/md med 1.500 kr i opstart. Fast, transparent pris - hosting, vedligehold og support inkluderet.">
-<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 
-<link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:600,700,800|dm-sans:300,400,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/questrial-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+
+<title>SiteLevo | Priser</title>
+<meta name="description" content="Én fast pris og ingen overraskelser. Starter 399 kr, Pro 649 kr og Business 899 kr om måneden ekskl. moms. Hosting, sikkerhed, vedligeholdelse og support er inkluderet, og der er ingen binding.">
+<link rel="canonical" href="https://sitelevo.com/priser.html">
+<meta property="og:title" content="SiteLevo | Priser">
+<meta property="og:description" content="Én fast pris. Ingen overraskelser. Alle pakker inkluderer hosting, sikkerhed, vedligeholdelse og support.">
+<meta property="og:url" content="https://sitelevo.com/priser.html">
+<meta property="og:type" content="website">
 </head>
-<body>
-
-<header class="nav">
-  <div class="wrap nav__inner">
-    <a href="index.html" class="brand">Site<span>levo</span></a>
-    <nav class="nav__links">
-      <a href="index.html">Forside</a>
-      <a href="saadan-virker-det.html">Sådan virker det</a>
-      <a href="priser.html" class="active">Priser</a>
-      <a href="eksempler.html">Eksempler</a>
-      <a href="om-os.html">Om os</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="btn btn--gold nav__cta">Book et møde</a>
+<body class="p-priser fx">
+<header class="nav sec" style="--sh:110">
+  <div class="cv">
+    <a href="index.html" class="logo" aria-label="SiteLevo forside">
+      <svg class="logo__mark a" viewBox="4 5 39 37" aria-hidden="true" style="--x:109;--y:39;--w:40;--h:37"><path d="M4.4 16.9 28.8 5.6 42.5 13.1 17.5 24.4Z"/><path d="M4.4 33.8 28.8 22.3 42.5 30 17.5 41.3Z"/></svg>
+      <span class="logo__word a t f-sb" style="--x:160.81;--y:32.84;--fs:36.15;--lh:36">sitelevo</span>
+    </a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Hovedmenu">
+      <a class="a t f-q" href="hvad-du-faar.html" data-page="hvad" style="--x:837.38;--y:37.66;--fs:21.58;--lh:27">Hvad du får</a>
+      <a class="a t f-q" href="saadan-fungerer-det.html" data-page="saadan" style="--x:1011.69;--y:37.66;--fs:21.58;--lh:27">Sådan fungerer det</a>
+      <a class="a t f-q" href="cases.html" data-page="cases" style="--x:1257.44;--y:39.18;--fs:21.58;--lh:27">Cases</a>
+      <a class="a t f-q" href="priser.html" data-page="priser" aria-current="page" style="--x:1373.21;--y:38.45;--fs:21.58;--lh:27">Priser</a>
+      <a class="a t f-q" href="kontakt.html" data-page="kontakt" style="--x:1474.35;--y:38.86;--fs:21.58;--lh:27">Kontakt</a>
+      <a class="btn btn--nav a" href="kontakt.html" style="--x:1611;--y:25;--w:219;--h:58"><span class="a t f-xb" style="--x:53.08;--y:15.85;--fs:18.09;--lh:23.4">Kom i gang</span></a>
     </nav>
-    <button class="nav__toggle" aria-label="Menu">☰</button>
   </div>
 </header>
 
-<section class="page-hero">
-  <div class="wrap reveal">
-    <p class="eyebrow">Priser</p>
-    <h1>Fast pris. Ingen overraskelser.</h1>
-    <p class="lead">Alle pakker har 1.500 kr i opstart og en fast månedspris. Du vælger niveauet - vi klarer resten.</p>
+<main>
+
+<!-- 1 HERO (PSD "Priser" y110-811) -->
+<section class="sec hero" style="--sh:701">
+  <div class="cv">
+    <h1 class="a t f-b" style="--x:131.43;--y:80.63;--fs:77.4;--lh:80.1;--w:900">Én fast pris.<br>Ingen overraskelser.</h1>
+    <p class="lead a t f-q" style="--x:135.93;--y:300.49;--fs:24.53;--lh:32.4;--w:760">Alle pakker inkluderer hosting, sikkerhed, vedligeholdelse<br class="d"> og support. Du vælger blot det niveau, der passer<br class="d"> til din virksomhed.</p>
+    <a class="btn btn--hero a" href="kontakt.html" style="--x:134;--y:450;--w:252;--h:66"><span class="a t f-xb" style="--x:58.07;--y:18.71;--fs:22.5;--lh:27">Kom i gang</span><svg class="arr a" viewBox="0 0 29 11" aria-hidden="true" style="--x:192.45;--y:26.81;--w:29;--h:11"><path d="M0 5.5h21"/><path class="h" d="M20 .8 29 5.5 20 10.2z"/></svg></a>
+    <ul class="trust">
+      <li><svg class="chk a" viewBox="0 0 28 28" aria-hidden="true" style="--x:134;--y:579;--w:28;--h:28"><circle cx="14" cy="14" r="13.4"/><path d="M8.6 14.4l3.6 3.6 7.4-7.8"/></svg><span class="a t f-q" style="--x:169.41;--y:585.44;--fs:19.62;--lh:21.6">Klar på 5 hverdage</span></li>
+      <li><svg class="chk a" viewBox="0 0 28 28" aria-hidden="true" style="--x:372;--y:579;--w:28;--h:28"><circle cx="14" cy="14" r="13.4"/><path d="M8.6 14.4l3.6 3.6 7.4-7.8"/></svg><span class="a t f-q" style="--x:405.41;--y:585.44;--fs:19.62;--lh:21.6">Fast månedlig pris</span></li>
+      <li><svg class="chk a" viewBox="0 0 28 28" aria-hidden="true" style="--x:610;--y:579;--w:28;--h:28"><circle cx="14" cy="14" r="13.4"/><path d="M8.6 14.4l3.6 3.6 7.4-7.8"/></svg><span class="a t f-q" style="--x:644.41;--y:586.71;--fs:19.62;--lh:21.6">Ingen binding</span></li>
+    </ul>
+    <img class="hero__img a" src="assets/img/priser-hero.webp" width="738" height="701" alt="Tablet med en frisørsalons hjemmeside bygget af SiteLevo" fetchpriority="high" style="--x:1180;--y:0;--w:738;--h:701">
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="prices">
-
-      <div class="price-card reveal">
+<!-- 2 PRISKORT (PSD y811-1909): samme kort som forsiden, 15 % større (PSD-kort 418 brede, afstand 31). Ligger i flow. -->
+<section class="sec prices" aria-label="Pakker og priser">
+  <div class="cv">
+    <div class="prices__wrap">
+      <div class="plans">
+      <article class="plan">
         <h3>Starter</h3>
-        <div class="amount">399 kr <small>/md</small></div>
-        <div class="startup">+ 1.500 kr i opstart</div>
-        <ul class="plist">
-          <li>5 sider</li>
-          <li>Kontaktformular</li>
-          <li>Google Maps</li>
-          <li>SEO-grundopsætning</li>
-          <li>Hosting, SSL & vedligehold</li>
-          <li>Support inden for 48 timer</li>
-        </ul>
-        <a href="kontakt.html" class="btn btn--ghost">Vælg Starter</a>
-      </div>
-
-      <div class="price-card featured reveal">
+        <p class="plan__price"><span>399 kr</span><span class="plan__md">/md</span></p>
+        <p class="plan__setup">+ 1.500 kr i opstart</p>
+        <ul class="plan__list"><li>5 sider</li><li>Kontaktformular</li><li>Google Maps</li><li>SEO-grundopsætning</li><li>Hosting, SSL &amp; vedligehold</li><li>Support inden for 48 timer</li></ul>
+        <a href="kontakt.html?pakke=starter" class="pbtn"><span>Vælg Starter</span></a>
+      </article>
+      <article class="plan plan--pro">
+        <span class="plan__badge">Mest valgt</span>
         <h3>Pro</h3>
-        <div class="amount">649 kr <small>/md</small></div>
-        <div class="startup">+ 1.500 kr i opstart</div>
-        <ul class="plist">
-          <li>8 sider</li>
-          <li>Alt i Starter</li>
-          <li>Cases & galleri</li>
-          <li>Online booking</li>
-          <li>Anmeldelser (Google Reviews)</li>
-          <li>Google Business-profil</li>
-          <li>Support inden for 24 timer</li>
-        </ul>
-        <a href="kontakt.html" class="btn btn--gold">Vælg Pro</a>
-      </div>
-
-      <div class="price-card reveal">
+        <p class="plan__price"><span>649 kr</span><span class="plan__md">/md</span></p>
+        <p class="plan__setup">+ 1.500 kr i opstart</p>
+        <ul class="plan__list"><li>8 sider</li><li>Alt i Starter</li><li>Cases &amp; galleri</li><li>Online booking</li><li>Anmeldelser (Google Reviews)</li><li>Google Business-profil</li><li>Support inden for 24 timer</li></ul>
+        <a href="kontakt.html?pakke=pro" class="pbtn pbtn--fill"><span>Vælg Pro</span></a>
+      </article>
+      <article class="plan">
         <h3>Business</h3>
-        <div class="amount">899 kr <small>/md</small></div>
-        <div class="startup">+ 1.500 kr i opstart</div>
-        <ul class="plist">
-          <li>Alt i Pro</li>
-          <li>Webshop lite</li>
-          <li>Nyhedsbrev</li>
-          <li>Google Reviews-automation</li>
-          <li>Kvartalsvis SEO-rapport</li>
-          <li>Support inden for 4 timer (tlf/WhatsApp)</li>
-        </ul>
-        <a href="kontakt.html" class="btn btn--ghost">Vælg Business</a>
+        <p class="plan__price"><span>899 kr</span><span class="plan__md">/md</span></p>
+        <p class="plan__setup">+ 1.500 kr i opstart</p>
+        <ul class="plan__list"><li>Alt i Pro</li><li>Webshop lite</li><li>Nyhedsbrev</li><li>Google Reviews-automation</li><li>Kvartalsvis SEO-rapport</li><li>Support inden for 4 timer (WhatsApp)</li></ul>
+        <a href="kontakt.html?pakke=business" class="pbtn"><span>Vælg Business</span></a>
+      </article>
+        </div>
+        <p class="plans__note">Alle priser er ekskl. moms. Ingen bindingsperiode. Opsigelse med løbende måned plus 1 måneds varsel. Enkelte tilvalg kan tilkøbes, vi rådgiver dig om det rigtige niveau.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 INKLUDERET I ALLE PAKKER (PSD y1909-2210) -->
+<section class="sec incl" style="--sh:301">
+  <div class="cv">
+    <h2 class="a t f-b" style="--x:67.57;--y:50.16;--fs:39.42;--lh:48.6">Alt dette er<br class="d"> inkluderet i<br class="d"> alle pakker</h2>
+    <ul class="incl__list">
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:390;--y:97;--w:54;--h:54"><path d="M7.2 18.5h10.2a4.1 4.1 0 0 0 .5-8.17 6 6 0 0 0-11.5 1.2A3.5 3.5 0 0 0 7.2 18.5z"/></svg><span class="a t f-q tc" style="--x:317;--y:174.18;--fs:16.38;--lh:18;--w:200">Hosting</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:569;--y:97;--w:54;--h:54"><path d="M12 2.8 19.5 5.6v5.6c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.6z"/><rect x="9.4" y="11.2" width="5.2" height="4.4" rx=".9"/><path d="M10.6 11.2V10a1.4 1.4 0 0 1 2.8 0v1.2"/></svg><span class="a t f-q tc" style="--x:496;--y:174.47;--fs:16.38;--lh:18;--w:200">SSL &amp; sikkerhed</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:770;--y:97;--w:54;--h:54"><path d="M3.6 12a8.4 8.4 0 1 0 2.5-6"/><path d="M3.4 3.6v4.2h4.2"/><path d="M12 8v4.4l2.8 1.6"/></svg><span class="a t f-q tc" style="--x:697;--y:174.47;--fs:16.38;--lh:18;--w:200">Backup</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:972;--y:97;--w:54;--h:54"><path d="M14.6 6.3a4 4 0 0 0 4.9 5.2l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4"/><path d="M14.6 6.3a4 4 0 0 1 5.5-2.8l-2.8 2.8.4 2.2 2.2.4 2.8-2.8a4 4 0 0 1-2.8 5.5"/></svg><span class="a t f-q tc" style="--x:899;--y:174.47;--fs:16.38;--lh:18;--w:200">Vedligeholdelse</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:1179;--y:97;--w:54;--h:54"><path d="M20.5 12a8.5 8.5 0 0 1-14.9 5.6"/><path d="M3.5 12a8.5 8.5 0 0 1 14.9-5.6"/><path d="M18.9 2.8v4h-4"/><path d="M5.1 21.2v-4h4"/></svg><span class="a t f-q tc" style="--x:1106;--y:174.47;--fs:16.38;--lh:18;--w:200">Løbende opdateringer</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:1381;--y:97;--w:54;--h:54"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.6"/><rect x="17" y="13" width="4" height="6" rx="1.6"/><path d="M19 19v.4a2.6 2.6 0 0 1-2.6 2.6H13"/></svg><span class="a t f-q tc" style="--x:1308;--y:174.13;--fs:16.38;--lh:18;--w:200">Support</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:1576;--y:97;--w:54;--h:54"><rect x="3.5" y="14.5" width="2.6" height="6" rx="1.3"/><rect x="8.2" y="11.5" width="2.6" height="9" rx="1.3"/><rect x="12.9" y="8.5" width="2.6" height="12" rx="1.3"/><rect x="17.6" y="5.5" width="2.6" height="15" rx="1.3"/><path d="M15.5 3h4.7v4.7"/></svg><span class="a t f-q tc" style="--x:1503;--y:174.47;--fs:16.38;--lh:18;--w:200">Grundlæggende SEO</span></li>
+      <li><svg class="iicon a" viewBox="0 0 24 24" aria-hidden="true" style="--x:1786;--y:97;--w:54;--h:54"><rect x="6.5" y="2.5" width="11" height="19" rx="2.4"/><path d="M10.8 18.4h2.4"/></svg><span class="a t f-q tc" style="--x:1713;--y:174.47;--fs:16.38;--lh:18;--w:200">Mobiloptimeret</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4 SAMMENLIGN PAKKERNE (PSD y2210-3102): rækkerne som aftalt 12. aug 2026, webshop kun i Business. Ligger i flow. -->
+<section class="sec compare">
+  <div class="cv">
+    <h2>Sammenlign pakkerne</h2>
+    <div class="cmp">
+      <table>
+        <thead><tr><th scope="col">Funktion</th><th scope="col">Starter</th><th scope="col">Pro</th><th scope="col">Business</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Antal sider</th><td data-l="Starter">5</td><td data-l="Pro">8</td><td data-l="Business">Ubegrænset</td></tr>
+          <tr><th scope="row">Kontaktformular</th><td data-l="Starter"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Google Maps</th><td data-l="Starter"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">SEO-grundopsætning</th><td data-l="Starter"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Hosting, SSL &amp; vedligehold</th><td data-l="Starter"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Cases &amp; galleri</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Online booking</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Anmeldelser (Google Reviews)</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Google Business-profil</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Webshop lite</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Nyhedsbrev</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Google Reviews-automation</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Kvartalsvis SEO-rapport</th><td data-l="Starter"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Pro"><span class="no" role="img" aria-label="Ikke inkluderet"></span></td><td data-l="Business"><svg class="ck" viewBox="0 0 16 14" role="img" aria-label="Inkluderet"><path d="M1.8 7.6l4.1 4.1L14.2 2.4"/></svg></td></tr>
+          <tr><th scope="row">Support</th><td data-l="Starter">Inden for 48 timer</td><td data-l="Pro">Inden for 24 timer</td><td data-l="Business">Inden for 4 timer (WhatsApp)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 5 FAQ (PSD y3102-3833): svar skrevet ud fra handelsbetingelser, samarbejdsaftale og Blueprint (6. nov 2026). Ligger i flow. -->
+<section class="sec faq">
+  <div class="cv">
+    <div class="faq__card">
+      <h2>Ofte stillede<br class="d"> spørgsmål</h2>
+      <div class="faq__col">
+        <details class="qa"><summary>Hvem ejer hjemmesiden?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Tekster og billeder, du selv leverer, er altid dine. Det samme gælder data om dine kunder og dine konti til fx Google Analytics og Google Business-profil, hvor vi blot er administrator.</p><p>Koden og det materiale, vi selv laver, ejes af SiteLevo. Ejer du domænet i forvejen, beholder du det. Har vi købt domænet til dig, kan du købe det af os til kostpris plus 500 kr, hvis du stopper.</p></div></details>
+        <details class="qa"><summary>Kan jeg skifte pakke?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Ja. Skriv til os på info@sitelevo.com, så finder vi den pakke, der passer til din virksomhed nu, og fortæller dig, hvad skiftet betyder for din pris.</p></div></details>
+        <details class="qa"><summary>Er der binding?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Nej. Abonnementet løber uden bindingsperiode. Du kan opsige med løbende måned plus 1 måneds varsel.</p></div></details>
+        <details class="qa"><summary>Hvor lang tid tager det?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Din hjemmeside er klar på 5 hverdage, regnet fra vi har modtaget alt det materiale, vi skal bruge fra dig. Du starter med at udfylde vores velkomstformular, godkende aftalen og betale opstarten.</p><p>Når du har godkendt siden, går den live. Dit abonnement starter først, når siden er live.</p></div></details>
+        <details class="qa"><summary>Kan jeg få lavet ændringer?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Ja. Inden lanceringen er 3 rettelsesrunder inkluderet, så siden bliver, som du vil have den. Efter lanceringen sender du bare dine ændringer, fx nye åbningstider eller priser, og de bliver typisk lavet inden for 2 hverdage.</p><p>Arbejde, der går ud over abonnementet eller rammen for et tilbud, kan tilkøbes for 795 kr pr. påbegyndt time.</p></div></details>
+        <details class="qa"><summary>Hvad hvis jeg allerede har et domæne?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Så beholder du det. Vi sørger for opsætningen, så domænet peger på din nye hjemmeside, og din e-mail fortsætter som før. Har du ikke et domæne, køber vi et til dig, og det er inkluderet i abonnementet.</p></div></details>
       </div>
-
-    </div>
-
-    <p class="center reveal" style="margin-top:30px;margin-bottom:8px"><span class="mp-badge" title="Vi tager imod MobilePay"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5A78FF"/><path d="M13 13h22a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H21l-7 5.5V32h-1a4 4 0 0 1-4-4V17a4 4 0 0 1 4-4z" fill="#fff"/><path d="M24 19.4c-1.7-1.9-4.6-1.1-4.6 1.4 0 1.9 2.3 3.7 4.6 5.5 2.3-1.8 4.6-3.6 4.6-5.5 0-2.5-2.9-3.3-4.6-1.4z" fill="#5A78FF"/></svg>Betaling med MobilePay</span></p>
-    <p class="center muted reveal" style="margin-top:12px;max-width:64ch;margin-left:auto;margin-right:auto">
-      Alle priser er ekskl. moms. Ingen bindingsperiode. Opsigelse med løbende måned plus 1 måneds varsel. Enkelte tilvalg kan tilkøbes, vi rådgiver dig om det rigtige niveau.
-    </p>
-  </div>
-</section>
-
-<section class="section section--off">
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <h2>Usikker på, hvad du har brug for?</h2>
-      <p>Book et uforpligtende møde, så finder vi den rigtige pakke til netop din virksomhed.</p>
-      <a href="kontakt.html" class="btn btn--gold">Book et møde</a>
+      <div class="faq__col">
+        <details class="qa"><summary>Hvad sker der, hvis jeg vil opsige?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Du opsiger skriftligt til info@sitelevo.com med løbende måned plus 1 måneds varsel. Opsiger du fx i februar, slutter aftalen ved udgangen af marts.</p><p>Når varslet udløber, stopper hosting og vedligehold. Har vi købt domænet, kan du købe det af os til kostpris plus 500 kr.</p></div></details>
+        <details class="qa"><summary>Hvad er inkluderet i supporten?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Du får hjælp til spørgsmål og fejl på din hjemmeside. Vi svarer på mail inden for 48 timer på Starter og 24 timer på Pro. På Business svarer vi inden for 4 timer, og du har også telefonsupport via WhatsApp, hvor du kan ringe eller skrive til os.</p><p>Hver måned tjekker vi desuden, at din side kører, som den skal, og du får en kort status.</p></div></details>
+        <details class="qa"><summary>Er der skjulte gebyrer?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Nej. Du betaler 1.500 kr i opstart og derefter den faste månedlige pris. Betalingen sker med kort via Stripe, og alle priser er ekskl. moms.</p><p>Det eneste, der kan koste ekstra, er tilvalg, du selv vælger, og arbejde ud over abonnementet til 795 kr pr. påbegyndt time.</p></div></details>
+        <details class="qa"><summary>Hjælper I med tekster og billeder?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Ja. Vi skriver teksterne ud fra det, du fortæller os i velkomstformularen. Vil du hellere skrive dem selv, er det også fint. Billeder sender du selv, gerne rigtige billeder af din virksomhed. Indtil de er på plads, bruger vi midlertidige billeder.</p></div></details>
+        <details class="qa"><summary>Skal jeg selv kunne noget teknisk?<svg class="pl" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></summary><div class="qa__a"><p>Nej. Vi står for opsætning, hosting, sikkerhed og opdateringer. Du skal kun give os adgang et par steder, fx til Google Analytics, og dertil får du en guide med skærmbilleder.</p></div></details>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- 6 CTA-BÅND: samme som forsiden -->
+<section class="sec cta" style="--sh:577">
+  <div class="cv">
+    <div class="band a" style="--x:86;--y:124;--w:1753;--h:365">
+      <h2 class="a t f-b tc" style="--x:176;--y:78.97;--fs:46.8;--lh:55.8;--w:1400">Klar til en hjemmeside, du ikke skal tænke på?</h2>
+      <a class="btn btn--band a" href="kontakt.html" style="--x:728;--y:233;--w:295;--h:78"><span class="a t f-b" style="--x:72.28;--y:21.49;--fs:24.3;--lh:28.8">Kom i gang</span><svg class="arr a" viewBox="0 0 29 11" aria-hidden="true" style="--x:211.97;--y:30.56;--w:29;--h:11"><path d="M0 5.5h21"/><path class="h" d="M20 .8 29 5.5 20 10.2z"/></svg></a>
+    </div>
+  </div>
+</section>
+
+</main>
 <footer class="footer">
-  <div class="wrap">
+  <div class="footer__wrap">
     <div class="footer__grid">
       <div>
-        <a href="index.html" class="brand">Site<span>levo</span></a>
-        <p style="margin-top:14px;max-width:36ch">Professionelle hjemmesider til lokale danske virksomheder - bygget, hostet og passet for dig.</p>
+        <a href="index.html" class="footer__brand">Site<span>levo</span></a>
+        <p class="footer__pitch">Professionelle hjemmesider til lokale danske virksomheder, bygget, hostet og passet for dig.</p>
       </div>
       <div>
         <h4>Sider</h4>
         <ul>
           <li><a href="index.html">Forside</a></li>
-          <li><a href="saadan-virker-det.html">Sådan virker det</a></li>
+          <li><a href="hvad-du-faar.html">Hvad du får</a></li>
+          <li><a href="saadan-fungerer-det.html">Sådan fungerer det</a></li>
+          <li><a href="cases.html">Cases</a></li>
           <li><a href="priser.html">Priser</a></li>
-          <li><a href="eksempler.html">Eksempler</a></li>
           <li><a href="om-os.html">Om os</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -140,11 +204,10 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
           <li><a href="mailto:info@sitelevo.com">info@sitelevo.com</a></li>
           <li>sitelevo.com</li>
           <li>Tlf: <a href="tel:+4533320719">33 32 07 19</a></li>
-          <li>Store Kongensgade 112, 1264 København K</li>
         </ul>
       </div>
     </div>
-    <div class="footer__pay"><span class="pay-label">Betaling:</span> <span class="mp-badge" title="Vi tager imod MobilePay"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#5A78FF"/><path d="M13 13h22a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H21l-7 5.5V32h-1a4 4 0 0 1-4-4V17a4 4 0 0 1 4-4z" fill="#fff"/><path d="M24 19.4c-1.7-1.9-4.6-1.1-4.6 1.4 0 1.9 2.3 3.7 4.6 5.5 2.3-1.8 4.6-3.6 4.6-5.5 0-2.5-2.9-3.3-4.6-1.4z" fill="#5A78FF"/></svg>MobilePay</span></div>
+    <div class="footer__pay"><span class="pay-label">Betaling:</span> <span class="mp-badge"><svg width="20" height="16" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="1" y="1" width="22" height="16" rx="3"/><path d="M1 6h22M5 12.5h5"/></svg>Kort via Stripe</span></div>
     <div class="footer__bottom">
       <span>© 2026 Sitelevo ApS · CVR 43695592</span>
       <span><a href="handelsbetingelser.html">Handelsbetingelser</a> · <a href="privatlivspolitik.html">Privatlivspolitik</a> · Professionelle hjemmesider på abonnement</span>
@@ -152,11 +215,6 @@ gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);
   </div>
 </footer>
 
-<div class="sticky-cta">
-  <a href="saadan-virker-det.html" class="btn btn--ghost">Sådan virker det</a>
-  <a href="kontakt.html" class="btn btn--gold">Book et møde</a>
-</div>
-
-<script src="script.js"></script>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

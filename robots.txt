@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /e-kort/test/
+
+Sitemap: https://sitelevo.com/sitemap.xml
