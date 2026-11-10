@@ -138,6 +138,60 @@ h1{
   .steps{margin-top:24px}
   .cal,.cal iframe{min-height:900px}
 }
+
+/* egen bookingkalender (10. nov 2026) */
+.nb{padding:34px 30px}
+.nb h2{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:var(--ink);letter-spacing:-.01em}
+.nb .sub{font-size:14px;color:var(--muted);margin-top:2px}
+:where(.nb) button{appearance:none;-webkit-appearance:none;font:inherit;color:inherit;margin:0;border:0;background:none;padding:0;cursor:pointer}
+.nb button:disabled{cursor:default}
+.nb button:focus-visible,.nb input:focus-visible,.nb textarea:focus-visible{outline:2px solid #6E8F78;outline-offset:2px}
+.nb [hidden]{display:none!important}
+.nb__week{display:flex;align-items:center;justify-content:space-between;margin-top:24px}
+.nb__wk{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:15px;color:var(--ink)}
+.nb__nav{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff}
+.nb__nav:disabled{opacity:.35}
+.nb__nav svg{width:16px;height:16px;fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nb__days{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
+.nb__day{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;border:1px solid var(--line);border-radius:10px;background:#fff;transition:border-color .2s ease}
+.nb__day .w{font-size:12.5px;color:var(--muted);line-height:1.2}
+.nb__day .d{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:17px;color:var(--ink);line-height:1.2}
+.nb__day:disabled{background:transparent;border-color:transparent}
+.nb__day:disabled .w,.nb__day:disabled .d{color:#BDBFC2}
+.nb__day.is-sel{background:#647E69;border-color:#647E69}
+.nb__day.is-sel .w,.nb__day.is-sel .d{color:#fff}
+.nb__lbl{font-size:14px;color:var(--muted);margin:22px 0 10px}
+.nb__times{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.nb__time{height:42px;border:1px solid #E0E0DC;border-radius:10px;background:#fff;font-size:15px;color:var(--ink);transition:border-color .2s ease}
+.nb__time.is-sel{background:#647E69;border-color:#647E69;color:#fff}
+.nb__none{font-size:15px;color:var(--muted)}
+@media(hover:hover){.nb__day:not(:disabled):not(.is-sel):hover,.nb__time:not(.is-sel):hover{border-color:#647E69}}
+.nb__btn{display:inline-flex;align-items:center;justify-content:center;margin-top:24px;min-height:48px;padding:0 26px;border-radius:999px;background:var(--sage);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:15px;color:var(--ink)}
+@media(hover:hover){.nb__btn:not(:disabled):hover{background:var(--sage-d)}}
+.nb__btn:disabled{opacity:.5}
+.nb__back{margin-top:16px;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.nb__chosen{margin-top:6px;font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:700;font-size:16px;color:var(--ink)}
+.nb form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.nb label{display:block;font-size:13px;color:var(--muted);line-height:1.4}
+.nb label.full{grid-column:1/-1}
+.nb input,.nb textarea{display:block;width:100%;margin-top:5px;padding:11px 13px;border:1px solid #DADAD6;border-radius:10px;background:#fff;font:inherit;font-size:15px;color:var(--ink);line-height:1.4}
+.nb textarea{min-height:92px;resize:vertical}
+.nb .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.nb__note{grid-column:1/-1;font-size:13px;color:var(--muted);line-height:1.5}
+.nb__note a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+.nb__err{margin-top:14px;font-size:14px;line-height:1.45;color:#9B2C2C}
+.nb__done{padding:24px 0}
+.nb__ok{display:block;width:48px;height:48px;margin-bottom:16px}
+.nb__done p{margin-top:8px;font-size:16px;line-height:1.6}
+.nb.is-busy{opacity:.6;pointer-events:none}
+.cal.is-live{min-height:0}
+.cal.is-live .load,.cal.is-live iframe{display:none}
+@media(max-width:860px){
+  .nb{padding:28px 22px}
+  .nb__times{grid-template-columns:repeat(3,1fr)}
+  .nb form{grid-template-columns:1fr}
+  .cal.is-live{min-height:0}
+}
 </style>
 </head>
 <body>
@@ -184,7 +238,45 @@ h1{
 
     <section class="cal" aria-label="Vælg et tidspunkt">
       <div class="load">Henter ledige tider</div>
-      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" title="Book en tid med Hesam" loading="eager"></iframe>
+      <div class="nb" data-api="https://script.google.com/macros/s/AKfycby9zki9Xp6GH65RtS_Oivvtvoh1u7dpjuf0gyrirq0KB9w0ewLUsPbm0ATUOD9XMXlf6Q/exec" hidden>
+        <div class="nb__pick">
+          <h2>Vælg dag og tid</h2>
+          <p class="sub">Telefonmøde i 15 minutter. Jeg ringer dig op.</p>
+          <div class="nb__week">
+            <button type="button" class="nb__nav nb__prev" aria-label="Forrige uge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+            <span class="nb__wk" aria-live="polite"></span>
+            <button type="button" class="nb__nav nb__next" aria-label="Næste uge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg></button>
+          </div>
+          <div class="nb__days"></div>
+          <p class="nb__lbl">Ledige tider</p>
+          <div class="nb__times"></div>
+          <button type="button" class="nb__btn nb__go" disabled>Vælg tidspunkt</button>
+        </div>
+        <div class="nb__form" hidden>
+          <h2>Dine oplysninger</h2>
+          <p class="nb__chosen"></p>
+          <form novalidate>
+            <label>Navn<input name="navn" autocomplete="name" required maxlength="80"></label>
+            <label>Virksomhed (valgfri)<input name="virksomhed" autocomplete="organization" maxlength="100"></label>
+            <label>E-mail<input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+            <label>Telefon<input name="telefon" type="tel" autocomplete="tel" required pattern="[0-9 +()]{8,}" maxlength="30"></label>
+            <label class="full">Hvad drejer det sig om? (valgfri)<textarea name="besked" maxlength="600"></textarea></label>
+            <label class="hp" aria-hidden="true">Lad dette felt være tomt<input name="hp" tabindex="-1" autocomplete="off"></label>
+            <p class="nb__note">Vi bruger dine oplysninger til at administrere bookingen og ringe dig op. Læs vores <a href="/privatlivspolitik.html">privatlivspolitik</a>.</p>
+          </form>
+          <button type="button" class="nb__btn nb__send">Book telefonmøde</button><br>
+          <button type="button" class="nb__back">Tilbage til kalenderen</button>
+        </div>
+        <div class="nb__done" hidden tabindex="-1">
+          <svg class="nb__ok" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#647E69"/><path d="M14.5 24.5l6.5 6.5 12.5-13" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h2>Tak, du er booket</h2>
+          <p class="nb__donetxt"></p>
+        </div>
+        <p class="nb__err" role="alert" hidden></p>
+      </div>
+
+      <iframe data-src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" title="Book en tid med Hesam" loading="eager"></iframe>
+      <noscript><iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3oF_zqZ24mrp2ddaIfXVwlOshRDRISYPxecbZMkOSxVZN5fuxesf3dHJ1UgWBfOMuVBVmqrbzX?gv=true" title="Book en tid med Hesam"></iframe></noscript>
     </section>
   </main>
 
@@ -194,5 +286,81 @@ h1{
   </div>
 
 </div>
+<script>
+(function(){
+  var nb=document.querySelector('.nb'), sec=document.querySelector('.cal'), ifr=sec&&sec.querySelector('iframe');
+  if(!nb||!sec) return;
+  var api=nb.getAttribute('data-api');
+  function fallback(){ if(ifr&&!ifr.getAttribute('src')) ifr.setAttribute('src',ifr.getAttribute('data-src')); }
+  if(!api||!window.fetch){ fallback(); return; }
+  var DAGE=['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'], KORT=['Søn','Man','Tirs','Ons','Tors','Fre','Lør'],
+      MDR=['januar','februar','marts','april','maj','juni','juli','august','september','oktober','november','december'];
+  var q=function(s){return nb.querySelector(s);};
+  var fromIso=function(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2]);};
+  var iso=function(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);};
+  var label=function(ds,tm){var d=fromIso(ds),w=DAGE[d.getDay()];return w.charAt(0).toUpperCase()+w.slice(1)+' d. '+d.getDate()+'. '+MDR[d.getMonth()]+' kl. '+tm;};
+  var S={map:{},weeks:[],w:0,date:null,time:null};
+  var err=q('.nb__err');
+  function showErr(m){err.textContent=m||''; err.hidden=!m;}
+  function step(st){q('.nb__pick').hidden=st!=='pick'; q('.nb__form').hidden=st!=='form'; q('.nb__done').hidden=st!=='done';}
+  function monday(d){var m=new Date(d); m.setDate(m.getDate()-((m.getDay()+6)%7)); return m;}
+  function render(){
+    var mon=S.weeks[S.w], days=q('.nb__days'), times=q('.nb__times'), fri=new Date(mon); fri.setDate(mon.getDate()+4);
+    q('.nb__wk').textContent=mon.getDate()+'. '+(mon.getMonth()===fri.getMonth()?'':MDR[mon.getMonth()]+' ')+'til '+fri.getDate()+'. '+MDR[fri.getMonth()];
+    q('.nb__prev').disabled=S.w<=0; q('.nb__next').disabled=S.w>=S.weeks.length-1;
+    days.innerHTML='';
+    for(var i=0;i<5;i++){(function(i){
+      var d=new Date(mon); d.setDate(mon.getDate()+i); var ds=iso(d), ok=(S.map[ds]||[]).length>0;
+      var b=document.createElement('button'); b.type='button'; b.className='nb__day'+(ds===S.date?' is-sel':''); b.disabled=!ok;
+      b.innerHTML='<span class="w">'+KORT[d.getDay()]+'</span><span class="d">'+d.getDate()+'</span>';
+      b.setAttribute('aria-label',label(ds,'').replace(' kl. ','')+(ok?'':' (ingen ledige tider)')); b.setAttribute('aria-pressed',ds===S.date?'true':'false');
+      b.addEventListener('click',function(){S.date=ds; S.time=null; render();});
+      days.appendChild(b);})(i);}
+    times.innerHTML='';
+    var sl=S.map[S.date]||[];
+    if(!sl.length){var p=document.createElement('p'); p.className='nb__none'; p.textContent='Ingen ledige tider denne uge. Prøv næste uge.'; times.appendChild(p);}
+    sl.forEach(function(tm){var b=document.createElement('button'); b.type='button'; b.className='nb__time'+(tm===S.time?' is-sel':''); b.textContent=tm;
+      b.setAttribute('aria-pressed',tm===S.time?'true':'false');
+      b.addEventListener('click',function(){S.time=tm; showErr(''); render();}); times.appendChild(b);});
+    var go=q('.nb__go'); go.disabled=!S.time; go.textContent=S.time?'Næste':'Vælg tidspunkt';
+  }
+  function firstIn(w){var mon=S.weeks[w]; for(var i=0;i<5;i++){var d=new Date(mon); d.setDate(mon.getDate()+i); if((S.map[iso(d)]||[]).length) return iso(d);} return null;}
+  function load(){
+    return fetch(api+'?action=slots').then(function(r){return r.json();}).then(function(d){
+      if(!d||!d.ok||!d.days) throw 0;
+      S.map={}; var wk={}; S.weeks=[];
+      d.days.forEach(function(x){S.map[x.date]=x.slots; var m=iso(monday(fromIso(x.date))); if(!wk[m]){wk[m]=1; S.weeks.push(fromIso(m));}});
+      S.weeks.sort(function(a,b){return a-b;});
+      while(S.weeks.length>1&&!firstIn(0)) S.weeks.shift();
+      S.w=0; S.date=firstIn(0)||iso(S.weeks[0]); S.time=null;
+      if(!S.weeks.length) throw 0;
+    });
+  }
+  var timer=setTimeout(fallback,8000);
+  load().then(function(){
+    clearTimeout(timer); nb.hidden=false; sec.classList.add('is-live'); render(); step('pick');
+    q('.nb__prev').addEventListener('click',function(){if(S.w>0){S.w--; S.date=firstIn(S.w)||S.date; S.time=null; render();}});
+    q('.nb__next').addEventListener('click',function(){if(S.w<S.weeks.length-1){S.w++; S.date=firstIn(S.w)||S.date; S.time=null; render();}});
+    q('.nb__go').addEventListener('click',function(){if(!S.time) return; q('.nb__chosen').textContent=label(S.date,S.time); showErr(''); step('form'); var f=q('[name=navn]'); if(f) f.focus();});
+    q('.nb__back').addEventListener('click',function(){showErr(''); step('pick');});
+    var form=q('form');
+    q('.nb__send').addEventListener('click',function(){
+      if(!form.checkValidity()){form.reportValidity(); return;}
+      var fd=new FormData(form), body={date:S.date,time:S.time,navn:fd.get('navn'),virksomhed:fd.get('virksomhed'),email:fd.get('email'),telefon:fd.get('telefon'),besked:fd.get('besked'),hp:fd.get('hp')};
+      showErr(''); nb.classList.add('is-busy');
+      fetch(api,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)})
+        .then(function(r){return r.json();}).then(function(d){
+          nb.classList.remove('is-busy');
+          if(d&&d.ok){ q('.nb__donetxt').textContent='Jeg ringer dig op '+label(S.date,S.time).replace(/^./,function(c){return c.toLowerCase();})+' på '+body.telefon+'. Du får en bekræftelse på mail.'; step('done'); q('.nb__done').focus(); }
+          else if(d&&d.error==='taken'){ load().then(function(){step('pick'); render(); showErr('Tiden er lige blevet taget. Vælg en anden.');}); }
+          else if(d&&d.error==='invalid'){ showErr('Tjek navn, e-mail og telefonnummer.'); }
+          else if(d&&d.error==='limit'){ showErr('Du har lige booket et møde. Skriv til info@sitelevo.com, hvis du vil ændre det.'); }
+          else throw 0;
+        }).catch(function(){ nb.classList.remove('is-busy'); showErr('Bookingen gik ikke igennem. Prøv igen, eller ring på 33 32 07 19.'); });
+    });
+  }).catch(function(){ clearTimeout(timer); fallback(); });
+})();
+</script>
+<noscript><style>.cal .load,.cal iframe[data-src]{display:none}</style></noscript>
 </body>
 </html>
